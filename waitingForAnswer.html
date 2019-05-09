@@ -12,12 +12,21 @@
   <meta name="theme-color" content="#4e54c8" />
 
   <style>
-    .hourglass object {
-      width: 40%;
-      margin-top: 10%;
-      margin-left: 30%;
-      animation: rotation 2s infinite linear;
+    body {
+      background: #45AAF2;
+      height: 100vh;
     }
+    
+    .navbar-color {
+      background-color: #2D98DA;
+      height: 65px;
+    }
+    .navbar-color h2, .navbar-color h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        padding: 0;
+        color: white;
+      }
 
     h3 {
       align-items: center;
@@ -25,6 +34,13 @@
       width: 80%;
       margin-left: 10%;
       margin-top: 10%;
+    }
+    
+    .hourglass object {
+      width: 40%;
+      margin-top: 10%;
+      margin-left: 30%;
+      animation: rotation 2s infinite linear;
     }
 
     @keyframes rotation {
@@ -35,26 +51,6 @@
       to {
         transform: rotate(359deg);
       }
-    }
-
-    body {
-      background: #45AAF2;
-      height: 100vh;
-    }
-
-    .navbar-color {
-      background-color: #2D98DA;
-    }
-
-    .navbar-color img {
-      height: 35px;
-      width: 35px;
-      border-radius: 50%;
-    }
-
-    h3,
-    h2 {
-      color: white;
     }
   </style>
   <title>IceBreaker</title>
