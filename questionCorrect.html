@@ -11,27 +11,6 @@
   <meta name="theme-color" content="#04d183" />
 
   <style>
-    .hourglass object {
-      width: 50%;
-      margin-top: 10%;
-      margin-left: 25%;
-    }
-
-    .congratulations-text {
-      align-items: center;
-      text-align: center;
-      width: 80%;
-      margin-left: 10%;
-      margin-top: 10%;
-    }
-
-    .form-movie-question {
-      justify-content: center;
-      text-align: center;
-      margin-top: 10%;
-      margin-bottom: 3%;
-    }
-
     body {
       background: linear-gradient(to top, #7ce079 0%, #04d183 100%);
       height: 100vh;
@@ -39,34 +18,19 @@
 
     .navbar-color {
       background-color: #02af6d;
+      height: 65px;
+    }
+    .navbar-color h2, .navbar-color h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0;
+      padding: 0;
+      color: white;
     }
 
-    .navbar-color img {
-      height: 35px;
-      width: 35px;
-      border-radius: 50%;
-    }
-
-    h3,
-    h2 {
-      color: black;
-    }
-
-    .form-refresh {
-      justify-content: center;
-      text-align: center;
+    .hourglass object {
+      width: 50%;
       margin-top: 10%;
-    }
-
-    .form-finish {
-      justify-content: center;
-      text-align: center;
-      margin-top: 3%;
-    }
-
-    .button-settings {
-      padding: 10px 40px;
-      border-radius: 0.65rem;
+      margin-left: 25%;
     }
 
     img {
@@ -75,8 +39,34 @@
       margin-top: 35px;
     }
 
-    .btn-finish {
-      background-color: #02af6d;
+    .congratulations-text {
+      align-items: center;
+      text-align: center;
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 10%;
+
+      font-size: 3rem;
+      font-weight: 600; 
+    }
+
+    .endgame-form {
+      justify-content: center;
+      text-align: center;
+      margin-top: 15%;
+    }
+
+    .button-settings {
+      padding: 10px 40px;
+      border-radius: 0.65rem;
+      width: 70%;
+
+      font-size: 16pt;
+      font-weight: 400;
+
+      background-color: #26DE81;
+      border: 4px solid black;
+      filter: drop-shadow(5px 5px #20BF6B);
     }
   </style>
   <title>IceBreaker</title>
@@ -94,7 +84,7 @@
 
   <form>
     <centre>
-      <div class="form-refresh align-items-center">
+      <div class="endgame-form align-items-center">
         <div class="col-auto">
           <a href="gameOver.html" class="button-settings btn btn-finish">
             End Game <i class="fa fa-arrow-right"></i>
