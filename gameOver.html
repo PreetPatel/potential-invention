@@ -29,7 +29,7 @@
         margin-left: 25%;
       }
 
-      h3 {
+      .congratulations-text {
         align-items: center;
         text-align: center;
         width: 80%;
@@ -40,6 +40,7 @@
         justify-content: center;
         text-align: center;
         margin-top: 10%;
+        margin-bottom: 3%;
       }
       body {
         background: linear-gradient(to top, #797ee0 0%, #4e54c8 100%);
@@ -57,10 +58,19 @@
       h2 {
         color: white;
       }
-      .form-congratulations {
+      .form-refresh {
         justify-content: center;
         text-align: center;
         margin-top: 10%;
+      }
+      .form-finish {
+        justify-content: center;
+        text-align: center;
+        margin-top: 3%;
+      }
+      .button-settings {
+        padding: 0.675rem 6.75rem;
+        border-radius: 0.65rem;
       }
     </style>
     <title>IceBreaker</title>
@@ -76,22 +86,28 @@
         Your browser does not support SVG
       </object>
     </div>
-    <h3>Congrats Liam!</h3>
+    <h2 class="congratulations-text">Congrats Shafin!</h2>
 
     <form>
       <centre>
-        <div class="form-congratulations form-row align-items-center">
+        <div class="form-refresh align-items-center">
           <div class="col-auto">
-            <a href="waitingForAnswer.html" class="btn btn-warning">
+            <a
+              href="waitingForAnswer.html"
+              class="button-settings btn btn-warning"
+            >
               Go Again? <i class="fa fa-refresh"></i>
             </a>
           </div>
         </div>
       </centre>
       <centre>
-        <div class="form-congratulations form-row align-items-center">
+        <div class="form-finish align-items-center">
           <div class="col-auto">
-            <a href="waitingForAnswer.html" class="btn btn-danger ">
+            <a
+              href="waitingForAnswer.html"
+              class="button-settings btn btn-danger "
+            >
               Finish <i class="fa fa-arrow-right"></i>
             </a>
           </div>
