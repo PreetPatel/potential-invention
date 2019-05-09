@@ -1,125 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <meta name="theme-color" content="#04d183" />
 
-    <style>
-      .hourglass object {
-        width: 50%;
-        margin-top: 10%;
-        margin-left: 25%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta name="theme-color" content="#04d183" />
 
-      .congratulations-text {
-        align-items: center;
-        text-align: center;
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 10%;
-      }
-      .form-movie-question {
-        justify-content: center;
-        text-align: center;
-        margin-top: 10%;
-        margin-bottom: 3%;
-      }
-      body {
-        background: linear-gradient(to top, #7ce079 0%, #04d183 100%);
-        height: 100vh;
-      }
-      .navbar-color {
-        background-color: #02af6d;
-      }
-      .navbar-color img {
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-      }
-      h3,
-      h2 {
-        color: black;
-      }
-      .form-refresh {
-        justify-content: center;
-        text-align: center;
-        margin-top: 10%;
-      }
-      .form-finish {
-        justify-content: center;
-        text-align: center;
-        margin-top: 3%;
-      }
-      .button-settings {
-        padding: 10px 40px;
-        border-radius: 0.65rem;
-      }
-      img {
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 35px;
-      }
-      .btn-finish {
-        background-color: #02af6d;
-      }
-    </style>
-    <title>IceBreaker</title>
-  </head>
-  <body id="bootstrap-overrides">
-    <nav class="navbar navbar-color">
-      <h2 class="navbar-brand">Team 18</h2>
-      <h2 class="navbar-brand">50pts</h2>
-    </nav>
+  <style>
+    .hourglass object {
+      width: 50%;
+      margin-top: 10%;
+      margin-left: 25%;
+    }
 
-    <div class="hourglass">
-      <img src="icons/pngs/Correct@4x.png" />
-    </div>
-    <h2 class="congratulations-text">+ 50 pts</h2>
-    <form>
-      <centre>
-        <div class="form-refresh align-items-center">
-          <div class="col-auto">
-            <a href="gameOver.html" class="button-settings btn btn-finish">
-              End Game  <i class="fa fa-arrow-right"></i>
-            </a>
-          </div>
+    .congratulations-text {
+      align-items: center;
+      text-align: center;
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 10%;
+    }
+
+    .form-movie-question {
+      justify-content: center;
+      text-align: center;
+      margin-top: 10%;
+      margin-bottom: 3%;
+    }
+
+    body {
+      background: linear-gradient(to top, #7ce079 0%, #04d183 100%);
+      height: 100vh;
+    }
+
+    .navbar-color {
+      background-color: #02af6d;
+    }
+
+    .navbar-color img {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+    }
+
+    h3,
+    h2 {
+      color: black;
+    }
+
+    .form-refresh {
+      justify-content: center;
+      text-align: center;
+      margin-top: 10%;
+    }
+
+    .form-finish {
+      justify-content: center;
+      text-align: center;
+      margin-top: 3%;
+    }
+
+    .button-settings {
+      padding: 10px 40px;
+      border-radius: 0.65rem;
+    }
+
+    img {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 35px;
+    }
+
+    .btn-finish {
+      background-color: #02af6d;
+    }
+  </style>
+  <title>IceBreaker</title>
+</head>
+
+<body id="bootstrap-overrides">
+  <nav class="navbar navbar-color">
+    <h2 class="navbar-brand">Team 18</h2>
+    <h2 class="navbar-brand">50pts</h2>
+  </nav>
+  <h2 class="congratulations-text">+ 50 pts</h2>
+  <div class="hourglass">
+    <img src="icons/pngs/Correct@4x.png" />
+  </div>
+
+  <form>
+    <centre>
+      <div class="form-refresh align-items-center">
+        <div class="col-auto">
+          <a href="gameOver.html" class="button-settings btn btn-finish">
+            End Game <i class="fa fa-arrow-right"></i>
+          </a>
         </div>
-      </centre>
-    </form>
+      </div>
+    </centre>
+  </form>
 
-    <!-- Bootstrap Javascript files from Bootstrap Bare-->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Bootstrap Javascript files from Bootstrap Bare-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
