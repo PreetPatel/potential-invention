@@ -20,114 +20,136 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <meta name="theme-color" content="#4e54c8" />
+    <meta name="theme-color" content="#007EBE" />
 
     <style>
-      .hourglass object {
-        width: 50%;
-        margin-top: 10%;
-        margin-left: 25%;
+      body {
+        background-color: #45AAF2;
+        height: 100vh;
       }
 
-      .congratulations-text {
+      .navbar-color {
+        background-color: #2D98DA;
+        height: 65px;
+      }
+      .navbar-color h2, .navbar-color h3 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        padding: 0;
+        color: white;
+      }
+
+      .question-text {
         align-items: center;
         text-align: center;
         width: 80%;
         margin-left: 10%;
         margin-top: 10%;
+
+        font-weight: 650;
       }
+
+      .question-person-img object {
+        width: 50%;
+        margin-top: 10%;
+        margin-left: 25%;
+      }
+
+      img {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 15px;
+      }
+
       .form-movie-question {
         justify-content: center;
         text-align: center;
         margin-top: 10%;
         margin-bottom: 3%;
       }
-      body {
-        background: linear-gradient(to top, #797ee0 0%, #4e54c8 100%);
-        height: 100vh;
-      }
-      .navbar-color {
-        background-color: #4e54c8;
-      }
-      .navbar-color img {
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-      }
-      h3,
-      h2 {
-        color: white;
-      }
-      .form-refresh {
+      
+      .mcq-form {
         justify-content: center;
         text-align: center;
         margin-top: 10%;
+        width: 95%;
       }
-      .form-finish {
-        justify-content: center;
-        text-align: center;
-        margin-top: 3%;
+      .mcq-form .row+.row {
+        padding-top: 1.5rem;
       }
+
       .button-settings {
-        padding: 10px 40px;
+        padding: 15px 10%;
         border-radius: 0.65rem;
+        width: 94%;
+
+        border: 4px solid black;
+        filter: drop-shadow(5px 5px #3867D6);
       }
-      img {
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 15px;
+
+      .btn-red {
+        background-color: #FC5C65;
+      }
+      .btn-orange {
+        background-color: #FD9644;
+      }
+      .btn-green {
+        background-color: #26DE81;
+      }
+      .btn-yellow {
+        background-color: #FED330;
       }
     </style>
     <title>IceBreaker</title>
   </head>
   <body id="bootstrap-overrides">
     <nav class="navbar navbar-color">
-      <h2 class="navbar-brand">ENGGEN 303 Group 12</h2>
+      <h2 class="navbar-brand">Group 12</h2>
       <h2 class="navbar-brand">18pts</h2>
     </nav>
 
-    <h2 class="congratulations-text">What is Liam's favourite movie?</h2>
-    <div class="hourglass">
+    <h2 class="question-text">What is Liam's favourite movie?</h2>
+    <div class="question-person-img">
       <img src="icons/pngs/big_face_for_question@4x.png" />
     </div>
 
-    <form>
-      <centre>
-        <div class="form-refresh align-items-center">
-          <div class="col-auto">
+    <form class="mcq-form container">
+        <div class="row">
+          <div class="col">
             <a
               href="questionCorrect.html"
-              class="button-settings btn btn-success"
+              class="button-settings btn btn-red"
             >
               Endgame
             </a>
+          </div>
+          <div class="col">
             <a
               href="questionCorrect.html"
-              class="button-settings btn btn-warning"
+              class="button-settings btn btn-orange"
             >
               Narina
             </a>
           </div>
         </div>
-      </centre>
-      <centre>
-        <div class="form-finish align-items-center">
-          <div class="col-auto">
+        <div class="row">
+          <div class="col">
             <a
               href="questionCorrect.html"
-              class="button-settings btn btn-danger "
+              class="button-settings btn btn-green"
             >
-              350 Lectures
+              350tures
             </a>
+          </div>
+          <div class="col">
             <a
               href="questionCorrect.html"
-              class="button-settings btn btn-primary "
+              class="button-settings btn btn-yellow"
             >
               Star Wars
             </a>
           </div>
         </div>
-      </centre>
     </form>
 
     <!-- Bootstrap Javascript files from Bootstrap Bare-->
