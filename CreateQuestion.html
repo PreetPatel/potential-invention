@@ -13,13 +13,17 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="theme-color" content="#4e54c8" />
 
     <style>
       .hourglass object {
-        width: 40%;
+        width: 50%;
         margin-top: 10%;
-        margin-left: 30%;
-        animation: rotation 2s infinite linear;
+        margin-left: 25%;
       }
 
       h3 {
@@ -29,14 +33,14 @@
         margin-left: 10%;
         margin-top: 10%;
       }
-
-      @keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(359deg);
-        }
+      .form-movie-question {
+        justify-content: center;
+        text-align: center;
+        margin-top: 10%;
+      }
+      body {
+        background: linear-gradient(to top, #8f94fb 0%, #4e54c8 50%);
+        height: 100vh;
       }
     </style>
     <title>IceBreaker</title>
@@ -45,12 +49,32 @@
     <nav class="navbar navbar-light bg-light">
       <span class="navbar-brand mb-0 h1">ENGGEN 303 Group 12</span>
     </nav>
+    <centre><h3>What is your favourite movie?</h3></centre>
     <div class="hourglass">
-      <object type="image/svg+xml" data="icons/Hour_glass.svg">
+      <object type="image/svg+xml" data="icons/Movie.svg">
         Your browser does not support SVG
       </object>
     </div>
-    <centre><h3>Waiting For Everyone's Answers</h3></centre>
+    <form>
+      <centre>
+        <div class="form-movie-question form-row align-items-center">
+          <div class="col-auto">
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="inlineFormInput"
+              placeholder="Enter your answer"
+            />
+          </div>
+
+          <div class="col-auto">
+            <a href="waitingForAnswer.html" class="btn btn-primary mb-2">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </centre>
+    </form>
 
     <!-- Bootstrap Javascript files from Bootstrap Bare-->
     <script
