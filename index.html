@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,7 +30,7 @@
         margin-left: 25%;
       }
 
-      .congratulations-text {
+      h3 {
         align-items: center;
         text-align: center;
         width: 80%;
@@ -40,7 +41,10 @@
         justify-content: center;
         text-align: center;
         margin-top: 10%;
-        margin-bottom: 3%;
+      }
+      h3,
+      h2 {
+        color: white;
       }
       body {
         background: linear-gradient(to top, #797ee0 0%, #4e54c8 100%);
@@ -54,28 +58,8 @@
         width: 35px;
         border-radius: 50%;
       }
-      h3,
-      h2 {
-        color: white;
-      }
-      .form-refresh {
-        justify-content: center;
-        text-align: center;
-        margin-top: 10%;
-      }
-      .form-finish {
-        justify-content: center;
-        text-align: center;
-        margin-top: 3%;
-      }
-      .button-settings {
-        padding: 0.675rem 6.75rem;
-        border-radius: 0.65rem;
-      }
-      img {
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 15px;
+      .timer {
+        width: 100%;
       }
     </style>
     <title>IceBreaker</title>
@@ -85,27 +69,31 @@
       <h2 class="navbar-brand">ENGGEN 303 Group 12</h2>
       <img src="assets/profile-image.jpg" alt="Profile Picture" />
     </nav>
-
-    <div class="hourglass">
-      <img src="icons/pngs/Podium@4x.png" />
+    <div class="w3-border">
+      <div class="w3-grey" style="height:24px;width:20%"></div>
     </div>
-    <h2 class="congratulations-text">Congrats Liam!</h2>
 
+    <centre><h3>What is your favourite movie?</h3></centre>
+    <div class="hourglass">
+      <object type="image/svg+xml" data="icons/Movie.svg">
+        Your browser does not support SVG
+      </object>
+    </div>
     <form>
       <centre>
-        <div class="form-refresh align-items-center">
+        <div class="form-movie-question form-row align-items-center">
           <div class="col-auto">
-            <a href="index.html" class="button-settings btn btn-warning">
-              Go Again? <i class="fa fa-refresh"></i>
-            </a>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="inlineFormInput"
+              placeholder="Enter your answer"
+            />
           </div>
-        </div>
-      </centre>
-      <centre>
-        <div class="form-finish align-items-center">
+
           <div class="col-auto">
-            <a href="index.html" class="button-settings btn btn-danger ">
-              Finish <i class="fa fa-arrow-right"></i>
+            <a href="waitingForAnswer.html" class="btn btn-primary mb-2">
+              <i class="fa fa-arrow-right"></i>
             </a>
           </div>
         </div>

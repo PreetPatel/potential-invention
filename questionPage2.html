@@ -6,7 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,7 +29,7 @@
         margin-left: 25%;
       }
 
-      h3 {
+      .congratulations-text {
         align-items: center;
         text-align: center;
         width: 80%;
@@ -41,10 +40,7 @@
         justify-content: center;
         text-align: center;
         margin-top: 10%;
-      }
-      h3,
-      h2 {
-        color: white;
+        margin-bottom: 3%;
       }
       body {
         background: linear-gradient(to top, #797ee0 0%, #4e54c8 100%);
@@ -58,36 +54,64 @@
         width: 35px;
         border-radius: 50%;
       }
+      h3,
+      h2 {
+        color: white;
+      }
+      .form-refresh {
+        justify-content: center;
+        text-align: center;
+        margin-top: 10%;
+      }
+      .form-finish {
+        justify-content: center;
+        text-align: center;
+        margin-top: 3%;
+      }
+      .button-settings {
+        padding: 10px 40px;
+        border-radius: 0.65rem;
+      }
+      img {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 15px;
+      }
     </style>
     <title>IceBreaker</title>
   </head>
   <body id="bootstrap-overrides">
     <nav class="navbar navbar-color">
       <h2 class="navbar-brand">ENGGEN 303 Group 12</h2>
-      <img src="assets/profile-image.jpg" alt="Profile Picture" />
+      <h2 class="navbar-brand">18pts</h2>
     </nav>
 
-    <centre><h3>What is your favourite movie?</h3></centre>
+    <h2 class="congratulations-text">What is Jacobs's favourite movie?</h2>
     <div class="hourglass">
-      <object type="image/svg+xml" data="icons/Movie.svg">
-        Your browser does not support SVG
-      </object>
+      <img src="icons/pngs/big_face_for_question@4x.png" />
     </div>
+
     <form>
       <centre>
-        <div class="form-movie-question form-row align-items-center">
+        <div class="form-refresh align-items-center">
           <div class="col-auto">
-            <input
-              type="text"
-              class="form-control mb-2"
-              id="inlineFormInput"
-              placeholder="Enter your answer"
-            />
+            <a href="gameOver.html" class="button-settings btn btn-success">
+              Endgame
+            </a>
+            <a href="gameOver.html" class="button-settings btn btn-warning">
+              Narina
+            </a>
           </div>
-
+        </div>
+      </centre>
+      <centre>
+        <div class="form-finish align-items-center">
           <div class="col-auto">
-            <a href="waitingForAnswer.html" class="btn btn-primary mb-2">
-              <i class="fa fa-arrow-right"></i>
+            <a href="gameOver.html" class="button-settings btn btn-danger ">
+              350 Lectures
+            </a>
+            <a href="gameOver.html" class="button-settings btn btn-primary ">
+              Star Wars
             </a>
           </div>
         </div>
