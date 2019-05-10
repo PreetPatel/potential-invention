@@ -8,85 +8,26 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <meta name="theme-color" content="#04d183" />
-
-  <style>
-    body {
-      background: linear-gradient(to top, #7ce079 0%, #04d183 100%);
-      height: 100vh;
-    }
-
-    .navbar-color {
-      background-color: #02af6d;
-      height: 65px;
-    }
-    .navbar-color h2, .navbar-color h3 {
-      font-size: 1.8rem;
-      margin-bottom: 0;
-      padding: 0;
-      color: white;
-    }
-
-    .hourglass object {
-      width: 50%;
-      margin-top: 10%;
-      margin-left: 25%;
-    }
-
-    img {
-      width: 80%;
-      margin-left: 10%;
-      margin-top: 35px;
-    }
-
-    .congratulations-text {
-      align-items: center;
-      text-align: center;
-      width: 80%;
-      margin-left: 10%;
-      margin-top: 10%;
-
-      font-size: 3rem;
-      font-weight: 600; 
-    }
-
-    .endgame-form {
-      justify-content: center;
-      text-align: center;
-      margin-top: 15%;
-    }
-
-    .button-settings {
-      padding: 10px 40px;
-      border-radius: 0.65rem;
-      width: 70%;
-
-      font-size: 16pt;
-      font-weight: 400;
-
-      background-color: #26DE81;
-      border: 4px solid black;
-      filter: drop-shadow(5px 5px #20BF6B);
-    }
-  </style>
   <title>IceBreaker</title>
 </head>
 
-<body id="bootstrap-overrides">
+<body id="bootstrap-overrides" class="question-correct">
   <nav class="navbar navbar-color">
     <h2 class="navbar-brand">Team 18</h2>
     <h2 class="navbar-brand">50pts</h2>
   </nav>
   <h2 class="congratulations-text">+ 50 pts</h2>
-  <div class="hourglass">
-    <img src="icons/pngs/Correct@4x.png" />
+  <div>
+    <img class="correct-img" src="icons/pngs/Correct@4x.png" />
   </div>
 
   <form>
     <centre>
       <div class="endgame-form align-items-center">
         <div class="col-auto">
-          <a href="gameOver.html" class="button-settings btn btn-finish">
+          <a href="gameOver.html" class="button-settings button-settings-green-page btn btn-green">
             End Game <i class="fa fa-arrow-right"></i>
           </a>
         </div>
