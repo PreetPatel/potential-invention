@@ -20,102 +20,56 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <meta name="theme-color" content="#4e54c8" />
-
-    <style>
-      .hourglass object {
-        width: 50%;
-        margin-top: 10%;
-        margin-left: 25%;
-      }
-
-      .congratulations-text {
-        align-items: center;
-        text-align: center;
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 10%;
-      }
-      .form-movie-question {
-        justify-content: center;
-        text-align: center;
-        margin-top: 10%;
-        margin-bottom: 3%;
-      }
-      body {
-        background: linear-gradient(to top, #797ee0 0%, #4e54c8 100%);
-        height: 100vh;
-      }
-      .navbar-color {
-        background-color: #4e54c8;
-      }
-      .navbar-color img {
-        height: 35px;
-        width: 35px;
-        border-radius: 50%;
-      }
-      h3,
-      h2 {
-        color: white;
-      }
-      .form-refresh {
-        justify-content: center;
-        text-align: center;
-        margin-top: 10%;
-      }
-      .form-finish {
-        justify-content: center;
-        text-align: center;
-        margin-top: 3%;
-      }
-      .button-settings {
-        padding: 10px 40px;
-        border-radius: 0.65rem;
-      }
-      img {
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 15px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta name="theme-color" content="#007EBE" />
     <title>IceBreaker</title>
   </head>
-  <body id="bootstrap-overrides">
+  <body id="bootstrap-overrides" class="blue-page">
     <nav class="navbar navbar-color">
-      <h2 class="navbar-brand">ENGGEN 303 Group 12</h2>
-      <h2 class="navbar-brand">18pts</h2>
+      <h2 class="navbar-brand">Agile Avengers</h2>
+      <h2 class="navbar-brand">50pts</h2>
     </nav>
+    <div class="progress-bar time-3"></div>
 
-    <h2 class="congratulations-text">What is Jacobs's favourite movie?</h2>
-    <div class="hourglass">
-      <img src="icons/pngs/big_face_for_question@4x.png" />
+    <h2 class="question-text">What is Drake's favourite movie?</h2>
+    <div class="question-person-img">
+      <img src="icons/pngs/Asset 6@4x.png" />
     </div>
 
-    <form>
-      <centre>
-        <div class="form-refresh align-items-center">
-          <div class="col-auto">
-            <a href="gameOver.html" class="button-settings btn btn-success">
-              Endgame
-            </a>
-            <a href="gameOver.html" class="button-settings btn btn-warning">
-              Narina
-            </a>
-          </div>
+    <form class="mcq-form container">
+      <div class="row">
+        <div class="col col-left">
+          <a href="waitingForAnswer.2.html" class="button-settings btn btn-red">
+            Skylines
+          </a>
         </div>
-      </centre>
-      <centre>
-        <div class="form-finish align-items-center">
-          <div class="col-auto">
-            <a href="gameOver.html" class="button-settings btn btn-danger ">
-              350 Lectures
-            </a>
-            <a href="gameOver.html" class="button-settings btn btn-primary ">
-              Star Wars
-            </a>
-          </div>
+        <div class="col col-right">
+          <a
+            href="waitingForAnswer.2.html"
+            class="button-settings btn btn-orange"
+          >
+            Life of Pi
+          </a>
         </div>
-      </centre>
+      </div>
+      <div class="row">
+        <div class="col col-left">
+          <a
+            href="waitingForAnswer.2.html"
+            class="button-settings btn btn-green"
+          >
+            Pikachu
+          </a>
+        </div>
+        <div class="col col-right">
+          <a
+            href="waitingForAnswer.2.html"
+            class="button-settings btn btn-yellow"
+          >
+            Aladin
+          </a>
+        </div>
+      </div>
     </form>
 
     <!-- Bootstrap Javascript files from Bootstrap Bare-->

@@ -21,55 +21,33 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <meta name="theme-color" content="#007EBE" />
+    <meta name="theme-color" content="#04d183" />
     <title>IceBreaker</title>
   </head>
-  <body id="bootstrap-overrides" class="blue-page">
+
+  <body id="bootstrap-overrides" class="question-correct">
     <nav class="navbar navbar-color">
       <h2 class="navbar-brand">Agile Avengers</h2>
-      <h2 class="navbar-brand">0pts</h2>
+      <h2 class="navbar-brand">50pts</h2>
     </nav>
-    <div class="progress-bar time-3"></div>
-
-    <h2 class="question-text">What is Liam's favourite movie?</h2>
-    <div class="question-person-img">
-      <img src="icons/pngs/big_face_for_question@4x.png" />
+    <h2 class="congratulations-text">+ 50 pts</h2>
+    <div>
+      <img class="correct-img" src="icons/pngs/Correct@4x.png" />
     </div>
 
-    <form class="mcq-form container">
-      <div class="row">
-        <div class="col col-left">
-          <a href="waitingForAnswer.1.html" class="button-settings btn btn-red">
-            Endgame
-          </a>
+    <form>
+      <centre>
+        <div class="endgame-form align-items-center">
+          <div class="col-auto">
+            <a
+              href="questionPage2.html"
+              class="button-settings button-settings-green-page btn btn-green"
+            >
+              Next Question <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
-        <div class="col col-right">
-          <a
-            href="waitingForAnswer.1.html"
-            class="button-settings btn btn-orange"
-          >
-            Narnia
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-left">
-          <a
-            href="waitingForAnswer.1.html"
-            class="button-settings btn btn-green"
-          >
-            350 lectures
-          </a>
-        </div>
-        <div class="col col-right">
-          <a
-            href="waitingForAnswer.1.html"
-            class="button-settings btn btn-yellow"
-          >
-            Star Wars
-          </a>
-        </div>
-      </div>
+      </centre>
     </form>
 
     <!-- Bootstrap Javascript files from Bootstrap Bare-->

@@ -1,233 +1,269 @@
 /* GENERAL CSS */
 body {
-    height: 100vh;
+  height: 100vh;
 }
 .navbar-color {
-    height: 65px;
+  height: 65px;
 }
-.navbar-color h2, .navbar-color h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0;
-    padding: 0;
-    color: white;
+.navbar-color h2,
+.navbar-color h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  padding: 0;
+  color: white;
 }
 .question-text {
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
-  }
-h3.question-text, h3.waiting {
-    font-weight: 650;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+h3.question-text,
+h3.waiting {
+  font-weight: 650;
 }
 .button-settings {
-    padding: 14px 10%;
-    border-radius: 0.65rem;
-    width: 90%;
-    font-size: 16pt;
-    font-weight: 400;
-    overflow: visible;
-    white-space: nowrap;
-    border: 4px solid black;
-    filter: drop-shadow(5px 5px #3867D6);
+  padding: 14px 10%;
+  border-radius: 0.65rem;
+  width: 90%;
+  font-size: 16pt;
+  font-weight: 400;
+  overflow: visible;
+  white-space: nowrap;
+  border: 4px solid black;
+  filter: drop-shadow(5px 5px #3867d6);
 }
 
 /* COLOURS */
 .blue-page {
-    background-color: #45AAF2;
+  background-color: #45aaf2;
 }
 .blue-page .navbar-color {
-    background-color: #2D98DA;
- }
-
+  background-color: #2d98da;
+}
 
 /* PERSONAL QUESTION PAGE (index.html) */
 .videocamera {
-    width: 70%;
-    margin-top: 7%;
-    margin-left: 15%;
-    margin-right: 15%;
-} 
+  width: 70%;
+  margin-top: 7%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 .answer-field {
-    border-radius: 15px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    height: 4rem;
-    width: 100%;
-    border: 4px solid black;
-    filter: drop-shadow(5px 5px #3867D6);
+  border-radius: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  height: 4rem;
+  width: 100%;
+  border: 4px solid black;
+  filter: drop-shadow(5px 5px #3867d6);
 }
 .enter-button {
-    background-color: #26DE81;
-    height: 4rem;
+  background-color: #26de81;
+  height: 4rem;
 
-    width: 80%;
+  width: 80%;
 
-    border-radius: 15px;
-    border: 4px solid black;
-    filter: drop-shadow(5px 5px #3867D6);
+  border-radius: 15px;
+  border: 4px solid black;
+  filter: drop-shadow(5px 5px #3867d6);
 }
 .enter-button .fa {
-    width: 70%;
-    padding-top: 10px;
-    font-size: 18pt;
+  width: 70%;
+  padding-top: 10px;
+  font-size: 18pt;
 }
 
 /* WAITING FOR ANSWER PAGE */
 .timer {
-    width: 100%;
+  width: 100%;
 }
 .hourglass {
-    width: 30%;
-    margin-top: 10%;
-    margin-left: 35%;
-    animation: rotation 2s infinite linear;
+  width: 30%;
+  margin-top: 10%;
+  margin-left: 35%;
+  animation: rotation 2s infinite linear;
 }
 h3.waiting {
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-      transform: rotate(359deg);
-    }
+  to {
+    transform: rotate(359deg);
+  }
 }
-
 
 /* QUESTION CORRECT PAGE*/
 body.question-correct {
-    background: linear-gradient(to top, #7ce079 0%, #04d183 100%);
+  background: linear-gradient(to top, #7ce079 0%, #04d183 100%);
 }
 .question-correct > .navbar-color {
-    background-color: #02af6d;
+  background-color: #02af6d;
 }
 img.correct-img {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 35px;
-  }
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 35px;
+}
 .congratulations-text {
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
-    font-size: 3rem;
-    font-weight: 600; 
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: 3rem;
+  font-weight: 600;
 }
 .endgame-form {
-    justify-content: center;
-    text-align: center;
-    margin-top: 35%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 35%;
 }
 .button-settings-green-page {
-    padding: 14px 10%;
-    border-radius: 0.65rem;
-    width: 70%;
-    font-size: 16pt;
-    font-weight: 400;
-    background-color: #26DE81;
-    filter: drop-shadow(5px 5px #20BF6B);
+  padding: 14px 10%;
+  border-radius: 0.65rem;
+  width: 70%;
+  font-size: 16pt;
+  font-weight: 400;
+  background-color: #26de81;
+  filter: drop-shadow(5px 5px #20bf6b);
+}
+
+/* QUESTION WRONG PAGE*/
+body.question-wrong {
+  background: linear-gradient(to top, #e95c31 0%, #e95c31 100%);
+}
+.question-wrong > .navbar-color {
+  background-color: #de5126;
+}
+img.wrong-img {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 35px;
+}
+.wrong-text {
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.wrong-next-form {
+  justify-content: center;
+  text-align: center;
+  margin-top: 15%;
+}
+.button-settings-red-page {
+  padding: 14px 10%;
+  border-radius: 0.65rem;
+  width: 70%;
+  font-size: 16pt;
+  font-weight: 400;
+  background-color: #de5126;
+  filter: drop-shadow(5px 5px #bf4d20);
 }
 
 /* questionPage */
 .question-text {
-    align-items: center;
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
 
-    font-weight: 650;
+  font-weight: 650;
 }
 .question-person-img object {
-    width: 50%;
-    margin-top: 10%;
-    margin-left: 25%;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
 }
 img {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 15px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15px;
 }
 .mcq-form {
-    justify-content: center;
-    text-align: center;
-    margin-top: 10%;
-    width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+  width: 100%;
 }
-.mcq-form .row+.row {
-    padding-top: 1.5rem;
+.mcq-form .row + .row {
+  padding-top: 1.5rem;
 }
 
 .col-right {
-    padding-left: 7px;
+  padding-left: 7px;
 }
 .col-left {
-    padding-right: 7px;
+  padding-right: 7px;
 }
 
 .btn-red {
-    background-color: #FC5C65;
+  background-color: #fc5c65;
 }
 .btn-orange {
-    background-color: #FD9644;
+  background-color: #fd9644;
 }
 .btn-green {
-    background-color: #26DE81;
+  background-color: #26de81;
 }
 .btn-yellow {
-    background-color: #FED330;
+  background-color: #fed330;
 }
 
 /* GAME OVER PAGE */
 .podium {
-    margin-top: 8%;
+  margin-top: 8%;
 }
 .form-finish {
-    justify-content: center;
-    text-align: center;
-    margin-top: 8%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 8%;
 }
-.form-finish .row+.row {
-    padding-top: 1.5rem;
+.form-finish .row + .row {
+  padding-top: 1.5rem;
 }
 .button-settings-long {
-    padding: 14px 10%;
-    border-radius: 0.65rem;
-    width: 70%;
-    font-size: 16pt;
-    font-weight: 400;
-    border: 4px solid black;
-    filter: drop-shadow(5px 5px #3867D6);
+  padding: 14px 10%;
+  border-radius: 0.65rem;
+  width: 70%;
+  font-size: 16pt;
+  font-weight: 400;
+  border: 4px solid black;
+  filter: drop-shadow(5px 5px #3867d6);
 }
 .btn-go-again {
-    background-color: #26DE81
+  background-color: #26de81;
 }
 .btn-finish {
-    background-color: #FED330;
-    width: 60%;
+  background-color: #fed330;
+  width: 60%;
 }
 
 /* progress bars */
 div.progress-bar {
-    background-color: #95d5ff;
-    height: 20px;
+  background-color: #95d5ff;
+  height: 20px;
 }
 div.time-1 {
-    width: 55%;
+  width: 55%;
 }
 div.time-2 {
-    width: 70%;
+  width: 70%;
 }
 div.time-3 {
-    width: 40%;
+  width: 40%;
 }
