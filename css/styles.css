@@ -259,11 +259,16 @@ div.progress-bar {
   height: 20px;
 }
 div.time-1 {
-  width: 55%;
+  animation: timer 25s 1;
 }
 div.time-2 {
-  width: 70%;
+  animation: timer 15s 1;
 }
 div.time-3 {
-  width: 40%;
+  animation: timer 15s 1;
+}
+
+@keyframes timer {
+  0% { width: 0% }	
+  100% { width: 100% }
 }
